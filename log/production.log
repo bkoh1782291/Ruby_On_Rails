@@ -1,0 +1,3 @@
+I, [2021-03-31T15:37:15.832453 #34156]  INFO -- : Migrating to CreateUsers (20210330225618)
+I, [2021-03-31T15:37:15.842050 #34156]  INFO -- : Migrating to AddIndexToUsersEmail (20210331024116)
+I, [2021-03-31T15:37:15.854031 #34156]  INFO -- : Migrating to AddPasswordDigestToUsers (20210331025342)
