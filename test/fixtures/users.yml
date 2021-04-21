@@ -7,3 +7,55 @@
 # two:
 #   name: MyString
 #   email: MyString
+
+brian:
+  name: brian example
+  email: brianexample@sealink.com.au
+  password_digest: <%= User.digest('password') %>
+  admin: true
+  activated: true
+  activated_at: <%= Time.zone.now %>
+
+steve:
+  name: steve example
+  email: steve@sealink.com.au
+  password_digest: <%= User.digest('password') %>
+  activated: true
+  activated_at: <%= Time.zone.now %>
+
+lana:
+  name: lana example
+  email: lana@sealink.com.au
+  password_digest: <%= User.digest('password') %>
+  activated: true
+  activated_at: <%= Time.zone.now %>
+
+malory:
+  name: malory example
+  email: malory@sealink.com.au
+  password_digest: <%= User.digest('password') %>
+  activated: true
+  activated_at: <%= Time.zone.now %>
+
+alfred:
+  name: alfred example
+  email: alfred@sealink.com.au
+  password_digest: <%= User.digest('password') %>
+  activated: true
+  activated_at: <%= Time.zone.now %>
+
+archer:
+  name: archer example
+  email: archer@sealink.com.au
+  password_digest: <%= User.digest('password') %>
+  activated: true
+  activated_at: <%= Time.zone.now %>
+
+<% 30.times do |n| %>
+user_<%= n %>:
+  name: <%= "User #{n}" %>
+  email: <%= "user-#{n}@example.com" %>
+  password_digest: <%= User.digest('password') %>
+  activated: true
+  activated_at: <%= Time.zone.now %>
+<% end %>

@@ -6,6 +6,8 @@ ruby '2.7.2'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.3'
 
+gem 'active_storage_validations', '~> 0.8.9'
+
 gem 'bootstrap-sass', '~> 3.4.1'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', '~> 1.4'
@@ -23,6 +25,9 @@ gem 'jbuilder', '~> 2.7'
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+gem 'faker', '2.11.0'
+gem 'will_paginate', '3.3.0'
+gem 'bootstrap-will_paginate', '1.0.0'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
@@ -60,4 +65,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 group :test do
   gem 'minitest-reporters', '1.4.3'
   gem 'bcrypt', '~> 3.1.13'
+  gem 'rails-controller-testing'
 end
