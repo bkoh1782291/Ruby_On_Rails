@@ -8,6 +8,9 @@ bundle exec rake test
 bundle exec rake console
     - to run local ruby console
 
+rails db:migrate
+    - migrate and repopulate database
+
 
 # IN SEPERATE TERMINAL 
 rails s
